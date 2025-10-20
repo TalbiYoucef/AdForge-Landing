@@ -12,6 +12,9 @@ export default {
         'inter': ['Inter', 'sans-serif'],
         'roboto': ['Roboto', 'sans-serif'],
       },
+      screens: {
+        'xs': '360px',
+      },
     },
   },
   plugins: [],

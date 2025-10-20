@@ -11,17 +11,17 @@ const NavBar = () => {
 
   return (
     <nav 
-      className="fixed text-white bg-transparent left-2 right-2 sm:left-10 sm:right-10 md:left-10 md:right-10 lg:left-20 lg:right-20 mt-20 z-50 bg-gradient-to-r from-[#A5A5A5] from-0% to-[#FFFFFF] to-100% backdrop-blur-lg border-2 border-white/65 transition-all rounded-full duration-300 font-roboto max-w-[100vw]" 
+      className="fixed text-white bg-transparent left-6 right-6 xs:left-2 xs:right-2 sm:left-10 sm:right-10 md:left-10 md:right-10 lg:left-20 lg:right-20 mt-16 xs:mt-20 z-50 bg-gradient-to-r from-[#A5A5A5] from-0% to-[#FFFFFF] to-100% backdrop-blur-lg border-2 border-white/65 transition-all rounded-full duration-300 font-roboto max-w-[100vw]" 
       style={{background: 'linear-gradient(90deg, #A5A5A530 0%, #FFFFFF30 100%)'}}
     >
-      <div className="w-full px-2 sm:px-3 md:px-4 lg:px-6 xl:px-8">
-        <div className="flex items-center justify-between h-12 sm:h-14 md:h-16">
+      <div className="w-full px-1 xs:px-2 sm:px-3 md:px-4 lg:px-6 xl:px-8">
+        <div className="flex items-center justify-between h-10 xs:h-12 sm:h-14 md:h-16">
           {/* nav logo icon */}
           <div className="flex-shrink-0">
             <img 
               src={adForgeLogo} 
               alt="Ad Forge" 
-              className="w-28 h-28 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:mr-16 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32"
+              className="w-20 h-20 xs:w-24 xs:h-24 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:mr-16 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32"
             />
           </div>
 
@@ -53,24 +53,24 @@ const NavBar = () => {
           </div>
 
           {/* Right side buttons */}
-          <div className="flex items-center gap-1 sm:gap-2 md:gap-3 lg:gap-3 xl:gap-4 flex-shrink-0">
+          <div className="flex items-center gap-0.5 xs:gap-1 sm:gap-2 md:gap-3 lg:gap-3 xl:gap-4 flex-shrink-0">
             {/* Connexion button - Always visible */}
-            <span className="hover:text-indigo-600 px-1 sm:px-1.5 md:px-2 lg:px-2 xl:px-3 py-2 text-[10px] sm:text-xs md:text-sm lg:text-sm xl:text-base font-regular font-roboto cursor-pointer">
+            <span className="hover:text-indigo-600 px-0.5 xs:px-1 sm:px-1.5 md:px-2 lg:px-2 xl:px-3 py-1.5 xs:py-2 text-[8px] xs:text-[10px] sm:text-xs md:text-sm lg:text-sm xl:text-base font-regular font-roboto cursor-pointer">
               Connexion
             </span>
 
             {/* CTA Button - Always shows "Essayer gratuitement" */}
-            <button className="bg-[#23DC00] hover:bg-[#1FC700] text-white font-regular font-poppins text-[9px] sm:text-[10px] md:text-xs lg:text-sm xl:text-base px-2 sm:px-3 md:px-4 lg:px-5 xl:px-6 py-1.5 sm:py-2 rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 flex-shrink-0 whitespace-nowrap">
+            <button className="bg-[#23DC00] hover:bg-[#1FC700] text-white font-regular font-poppins text-[8px] xs:text-[9px] sm:text-[10px] md:text-xs lg:text-sm xl:text-base px-1.5 xs:px-2 sm:px-3 md:px-4 lg:px-5 xl:px-6 py-1 xs:py-1.5 sm:py-2 rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 flex-shrink-0 whitespace-nowrap">
               Essayer gratuitement
             </button>
 
             {/* Hamburger Menu - Mobile & Tablet */}
             <button
               onClick={toggleMenu}
-              className="md:hidden bg-transparent inline-flex items-center justify-center p-1 sm:p-1.5 rounded-md text-white hover:text-gray-300 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white/30 flex-shrink-0"
+              className="md:hidden bg-transparent inline-flex items-center justify-center p-0.5 xs:p-1 sm:p-1.5 rounded-md text-white hover:text-gray-300 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white/30 flex-shrink-0"
             >
               <svg
-                className="h-5 w-5 sm:h-6 sm:w-6 transition-transform duration-300"
+                className="h-4 w-4 xs:h-5 xs:w-5 sm:h-6 sm:w-6 transition-transform duration-300"
                 stroke="currentColor"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -126,32 +126,24 @@ const NavBar = () => {
 
         {/* Mobile Menu Dropdown */}
         {isMenuOpen && (
-          <div className="absolute top-14 sm:top-16 left-0 right-0 z-40 flex justify-center px-2 sm:px-4 animate-slideDown">
-            <div className="w-full max-w-sm px-4 sm:px-6 py-4 sm:py-6 space-y-3 sm:space-y-4 rounded-2xl bg-white/95 backdrop-blur-lg shadow-xl border border-gray-200/30 transform transition-all duration-300">
+          <div className="absolute top-11 xs:top-14 sm:top-16 left-0 right-0 z-40 flex justify-center px-1 xs:px-2 sm:px-4 animate-slideDown">
+            <div className="w-full max-w-sm px-3 xs:px-4 sm:px-6 py-3 xs:py-4 sm:py-6 space-y-2 xs:space-y-3 sm:space-y-4 rounded-2xl bg-white/95 backdrop-blur-lg shadow-xl border border-gray-200/30 transform transition-all duration-300">
               {/* Mobile menu - Extra small screens only */}
               <div className="sm:hidden">
-                <span className="text-gray-800 hover:text-indigo-600 block text-base font-medium cursor-pointer text-center transition-colors">
+                <span className="text-gray-800 hover:text-indigo-600 block text-sm xs:text-base font-medium cursor-pointer text-center transition-colors">
                   Accueil
                 </span>
-                <span className="text-gray-800 hover:text-indigo-600 block text-base font-medium cursor-pointer text-center transition-colors mt-3">
+                <span className="text-gray-800 hover:text-indigo-600 block text-sm xs:text-base font-medium cursor-pointer text-center transition-colors mt-2 xs:mt-3">
                   À propos
                 </span>
-                <span className="text-gray-800 hover:text-indigo-600 block text-base font-medium cursor-pointer text-center transition-colors mt-3">
+                <span className="text-gray-800 hover:text-indigo-600 block text-sm xs:text-base font-medium cursor-pointer text-center transition-colors mt-2 xs:mt-3">
                   Fonctionnalités
                 </span>
-                <span className="text-gray-800 hover:text-indigo-600 block text-base font-medium cursor-pointer text-center transition-colors mt-3">
+                <span className="text-gray-800 hover:text-indigo-600 block text-sm xs:text-base font-medium cursor-pointer text-center transition-colors mt-2 xs:mt-3">
                   Tarifs
                 </span>
 
-                {/* Mobile menu CTA + Connect - Only on xs screens */}
-                <div className="border-t border-gray-200 pt-3 mt-3">
-                  <span className="text-gray-800 hover:text-indigo-600 block text-base font-medium cursor-pointer text-center transition-colors">
-                    Connexion
-                  </span>
-                  <button className="w-full mt-3 bg-[#23DC00] hover:bg-[#1FC700] text-white px-4 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 hover:shadow-lg">
-                    Essayer Ad Forge gratuitement
-                  </button>
-                </div>
+              
               </div>
 
               {/* Small screen menu - No Connexion/Essayer buttons */}

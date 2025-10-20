@@ -5,31 +5,31 @@ import adForgeLogo from "../assets/ad_forge.svg";
 const Footer = () => {
   return (
     <footer className="bg-[#1A1A1A] text-white">
-      <div className="w-full h-full mx-auto sm:px-2 sm:py-6 lg:px-6 xl:px-12 2xl:px-24 md:py-16">
+      <div className="w-full h-full mx-auto px-3 xs:px-4 sm:px-2 py-4 xs:py-6 sm:py-6 lg:px-6 xl:px-12 2xl:px-24 md:py-16">
         {/* Main content area */}
-        <div className="px-12 sm:px-2 flex flex-row gap-24 sm:gap-4 2xl:gap-32 mb-8">
+        <div className="px-2 xs:px-6 sm:px-8 md:px-12 flex flex-row gap-4 xs:gap-6 sm:gap-4 md:gap-12 lg:gap-24 2xl:gap-32 mb-6 xs:mb-8">
           {/* Brand section */}
           <div>
             <div className="md:col-span-1">
-              <p className="text-gray-300 text-xl max-w-lg md:text-lg tracking-wide sm:text-base sm:max-w-lg mb-12">
+              <p className="text-gray-300 text-xs xs:text-base sm:text-base md:text-lg lg:text-xl max-w-xs xs:max-w-sm sm:max-w-lg  mb-6 xs:mb-8 sm:mb-12">
                 Trouvez rapidement des solutions et des conseils utiles pour
                 utiliser adforge.
               </p>
               <div className="flex items-center">
-                <img src={adForgeLogo} alt="AD FORGE" className="h-24 w-auto" />
+                <img src={adForgeLogo} alt="AD FORGE" className="h-16 xs:h-20 sm:h-24 w-auto" />
               </div>
             </div>
           </div>
 
-          <div className="flex flex-row text-3xl gap-32 sm:gap-4 2xl:gap-32 mb-8">
+          <div className="flex flex-row text-base gap-4 xs:gap-6 sm:gap-4 md:gap-12 lg:gap-24 xl:gap-32 2xl:gap-32 mb-6 xs:mb-8">
             {/* À propos */}
             <div>
-              <h3 className="text-white font-semibold mb-4 text-2xl sm:text-xl">À propos</h3>
-              <ul className="space-y-4 text-white">
+              <h3 className="text-white font-semibold mb-2 xs:mb-3 sm:mb-4 text-base xs:text-lg sm:text-xl md:text-2xl">À propos</h3>
+              <ul className="space-y-2 xs:space-y-3 sm:space-y-4 text-white">
                 <li>
                   <a
                     href="#"
-                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-lg sm:text-base"
+                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-xs xs:text-sm sm:text-base md:text-lg"
                   >
                     Services
                   </a>
@@ -37,7 +37,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-lg sm:text-base"
+                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-xs xs:text-sm sm:text-base md:text-lg"
                   >
                     Testimonials
                   </a>
@@ -45,7 +45,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-lg sm:text-base"
+                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-xs xs:text-sm sm:text-base md:text-lg"
                   >
                     Contact
                   </a>
@@ -55,12 +55,12 @@ const Footer = () => {
 
             {/* Resources */}
             <div>
-              <h3 className="text-white font-bold mb-4 text-2xl sm:text-xl">Resources</h3>
-              <ul className="space-y-3 text-white">
+              <h3 className="text-white font-bold mb-2 xs:mb-3 sm:mb-4 text-base xs:text-lg sm:text-xl md:text-2xl">Resources</h3>
+              <ul className="space-y-2 xs:space-y-3 text-white">
                 <li>
                   <a
                     href="#"
-                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-lg sm:text-base"
+                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-xs xs:text-sm sm:text-base md:text-lg"
                   >
                     Centre d'aide
                   </a>
@@ -68,7 +68,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-lg sm:text-base"
+                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-xs xs:text-sm sm:text-base md:text-lg"
                   >
                     Documentation
                   </a>
@@ -76,7 +76,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-lg sm:text-base"
+                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-xs xs:text-sm sm:text-base md:text-lg"
                   >
                     Communauté
                   </a>
@@ -86,12 +86,12 @@ const Footer = () => {
 
             {/* Produits */}
             <div>
-              <h3 className="text-white font-bold mb-4 text-2xl sm:text-xl">Produits</h3>
-              <ul className="space-y-3 text-white">
+              <h3 className="text-white font-bold mb-2 xs:mb-3 sm:mb-4 text-base xs:text-lg sm:text-xl md:text-2xl">Produits</h3>
+              <ul className="space-y-2 xs:space-y-3 text-white">
                 <li>
                   <a
                     href="#"
-                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-lg sm:text-base"
+                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-xs xs:text-sm sm:text-base md:text-lg"
                   >
                     Pour individus
                   </a>
@@ -99,7 +99,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-lg sm:text-base"
+                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-xs xs:text-sm sm:text-base md:text-lg"
                   >
                     Pour buisnesses
                   </a>
@@ -107,7 +107,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-lg sm:text-base"
+                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-xs xs:text-sm sm:text-base md:text-lg"
                   >
                     Solutions de payement
                   </a>
@@ -115,7 +115,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-lg sm:text-base"
+                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-xs xs:text-sm sm:text-base md:text-lg"
                   >
                     Integrations
                   </a>
@@ -125,12 +125,12 @@ const Footer = () => {
 
             {/* Support */}
             <div>
-              <h3 className="text-white font-bold mb-4 text-2xl sm:text-xl">Support</h3>
-              <ul className="space-y-3 text-white">
+              <h3 className="text-white font-bold mb-2 xs:mb-3 sm:mb-4 text-base xs:text-lg sm:text-xl md:text-2xl">Support</h3>
+              <ul className="space-y-1 xs:space-y-3 md:space-y-2 text-white">
                 <li>
                   <a
                     href="#"
-                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-lg sm:text-base"
+                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-xs xs:text-sm sm:text-base md:text-lg"
                   >
                     Support
                   </a>
@@ -138,7 +138,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-lg sm:text-base"
+                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-xs xs:text-sm sm:text-base md:text-lg"
                   >
                     FAQ
                   </a>
@@ -146,7 +146,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-lg sm:text-base"
+                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-xs xs:text-sm sm:text-base md:text-lg"
                   >
                     Reporter un problème
                   </a>
@@ -154,7 +154,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-lg sm:text-base"
+                    className="hover:text-gray-300 text-[#DECDCD] transition-colors text-xs xs:text-sm sm:text-base md:text-lg"
                   >
                     Sécurité
                   </a>
@@ -166,11 +166,11 @@ const Footer = () => {
 
 
         {/* Bottom section */}
-        <div className="border-t border-[#FFFFFF] flex flex-col px-12 py-12 md:flex-row justify-between items-center">
-          <div className="text-gray-500 text-xl mb-4 md:mb-0">
+        <div className="border-t border-[#FFFFFF] flex flex-col px-4 xs:px-6 sm:px-8 md:px-12 py-6 xs:py-8 sm:py-12 md:flex-row justify-between items-center">
+          <div className="text-gray-500 text-sm xs:text-base sm:text-lg md:text-xl mb-3 xs:mb-4 md:mb-0">
             Copyright 2025
           </div>
-          <div className="flex space-x-6">
+          <div className="flex space-x-4 xs:space-x-6">
             {/* Social media icons */}
             <a
               href="#"
