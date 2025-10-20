@@ -21,7 +21,7 @@ const NavBar = () => {
             <img 
               src={adForgeLogo} 
               alt="Ad Forge" 
-              className="w-20 h-20 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:mr-16"
+              className="w-28 h-28 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:mr-16 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32"
             />
           </div>
 
